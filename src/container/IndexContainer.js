@@ -22,7 +22,8 @@ const IndexContainer = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         console.log(form);
-        history.push("/home");
+        //envio de informacion
+        history.push("/home", { form: form });
     }
 
 
